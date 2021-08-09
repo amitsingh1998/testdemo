@@ -5,7 +5,7 @@ env:
 phases:
   install:
     commands:
-    - echo installing maven...
+    - echo installing maven....
   build:
     commands:
     - echo building the justiceleague-tracker
