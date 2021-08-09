@@ -5,11 +5,11 @@ env:
 phases:
   install:
     commands:
-    - echo installing maven....
+    - echo installing maven...
   build:
     commands:
     - echo building the justiceleague-tracker
-    - mvn clean package
+    - mvn install
 artifacts:
   files:
   - target/*.jar
