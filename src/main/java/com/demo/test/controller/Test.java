@@ -8,7 +8,7 @@ public class Test {
 	
 	@GetMapping("/api/health")
 	public String test() {
-	return "ok";	
+	return "ok test";	
 	}
 
 }
