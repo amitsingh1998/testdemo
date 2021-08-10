@@ -1,18 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/testdemo
-hooks:
-  ApplicationStop:
-    - location: scripts/sever_stop.sh
-      timeout: 300
-      runas: ec2-user
-  BeforeInstall:
-    - location: scripts/server_start.sh
-      timeout: 300
-      runas: ec2-user
-  ApplicationStart:
-    - location: scripts/sever_start.sh
-      timeout: 300 
-      runas: ec2-user
+  - source: target/testdemo.jar
+    destination: /tmp
